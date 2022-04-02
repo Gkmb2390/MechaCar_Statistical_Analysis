@@ -8,14 +8,14 @@ The multiple linear regression model accounts for roughly 70 % of the outcomes, 
 
 As with most analysis, I believe that the regression model we have completed here has allowed us to identify more relevant contributing factors.  As the model shows below; the ground clearance and mpg categories due show a statitically relevant value and therefore should be showing an effective prediction of the possible MPG efficiencies that MechaCar could produce. Additionally, when looking to the factors that may not be contributing as effectively, (i.e. vehicle weight, spoiler angle & AWD), we can safely assume that these factors are not statistically relevant.  
 
-![MultipleLinearRegression]
+![MultipleLinearRegression](https://github.com/Gkmb2390/MechaCar_Statistical_Analysis/blob/main/Summary%20of%20Multiple%20Linear%20Regression.png)
 
 
 ## Summary Statistics on Suspension Coils
 
 In reviewing the outcomes of the data analysis for the suspension coils, we have discovered that Lot 1 & Lot 2 do meet the design specifications required by MechaCar.  When reviewing the chart below, we see that Lot 3 does not meet the specifications, at a variance of roughly 170 psi.  MechaCar should discontinue or rework the production designs for Lot 3 suspension coils, until the meet the new requirements.  Given that they have 2 alternative methods of production and development of the suspension coils they shouldn't be overly concerned with Lot 3.
 
-![SummaryOfLotResults]
+![SummaryOfLotResults](https://github.com/Gkmb2390/MechaCar_Statistical_Analysis/blob/main/Summary%20of%20Lot%20Results.png)
 
 
 
@@ -23,13 +23,13 @@ In reviewing the outcomes of the data analysis for the suspension coils, we have
 After reviewing our findings from the multiple t-tests preformed for Suspension Coils, we find that we do not have sufficient evidence to reject the null hypothesis.  In this circumstance each instance of t-tests preformed indicated a P Value greater than our standard p value (.05), which leads us to believe that the results are due to random chance rather than a specific dependent variable.  Beginning with a t-test across all samples, we can see that the p-value ultimately calculated as .36 - indicating initially suggesting that the null hypothesis is correct.  Later when taking samples from each of the 3 lots, we find that the p-values are also greater than our standard p value, with lots 1, 2, 3 having p values of .29, .12 & .83, respectively.  The images below are taken from each of the respective tests.  
 
 
-![t-teststotal]
+![t-teststotal](https://github.com/Gkmb2390/MechaCar_Statistical_Analysis/blob/main/tTest%20results%20all%20lots.png)
 
-![t-testslot1]
+![t-testslot1](https://github.com/Gkmb2390/MechaCar_Statistical_Analysis/blob/main/ttes%20results%20sample%201.png)
 
-![t-testslot2]
+![t-testslot2](https://github.com/Gkmb2390/MechaCar_Statistical_Analysis/blob/main/ttes%20results%20sample%202.png)
 
-![t-testslot3]
+![t-testslot3](https://github.com/Gkmb2390/MechaCar_Statistical_Analysis/blob/main/ttes%20results%20sample%203.png)
 
 
 ## Study Design: MechaCar vs Competition
