@@ -21,14 +21,16 @@ lot_summary <- Suspension_Data %>% group_by(Manufacturing_Lot) %>%  summarize (M
 
 #Run a t Test to determine if the PSI is statistically different across lots  
 PSI_data_sample <- Suspension_Data %>% filter(PSI>1) %>% sample_n(30)
-t.test(PSI_data_sample$PSI,Suspension_Data$PSI)
+t.test(PSI_data_sample$PSI,mu=1500)
 
 #Run a t Test to determine if the PSI is statistically different across each of the lots individually
-sample_lot <- Suspension_Data %>%  filter(Manufacturing_Lot== 'Lot1') %>% sample_n(10)
-sample_lot2 <- Suspension_Data %>%  filter(Manufacturing_Lot== 'Lot2') %>% sample_n(10)
-sample_lot3 <- Suspension_Data %>%  filter(Manufacturing_Lot== 'Lot3') %>% sample_n(10)
-t.test(sample_lot$PSI,Suspension_Data$PSI)
-t.test(sample_lot2$PSI,Suspension_Data$PSI)
-t.test(sample_lot3$PSI,Suspension_Data$PSI)
+sample_lot <- Suspension_Data %>%  filter(Manufacturing_Lot== 'Lot1') %>% sample_n(25)
+sample_lot2 <- Suspension_Data %>%  filter(Manufacturing_Lot== 'Lot2') %>% sample_n(25)
+sample_lot3 <- Suspension_Data %>%  filter(Manufacturing_Lot== 'Lot3') %>% sample_n(25)
+t.test(sample_lot$PSI,mu=1500)
+t.test(sample_lot2$PSI,mu=1500)
+t.test(sample_lot3$PSI,mu=1500)
 
-##t.test(subset(Suspension_Data, Manufacturing_Lot=='Lot1')$PSI,Suspension_Data$PSI)
+#t.test(subset(Suspension_Data, Manufacturing_Lot=='Lot1')$PSI,mu=1500)
+#t.test(subset(Suspension_Data, Manufacturing_Lot=='Lot2')$PSI,mu=1500)
+#t.test(subset(Suspension_Data, Manufacturing_Lot=='Lot3')$PSI,mu=1500)
